@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ...
+        // 好比是rest参数的逆运算
+        // 将一个数组打散
+        const arr= [18,19,20]
+        console.log(...arr);
+
+        const arr1 = [0,1,2];
+        const arr2 = [3,4,5];
+
+        const newArr =arr1.concat(arr2);   //将两个数组连成一个数组
+
+        const spread_arr = [...arr1,...arr2];       //将两个数组连成一个数组
+
+        const [aa,...rest_arr] = arr;
+
+        // const arr3 = Math.max(newArr);
+        
+        // Math.max();   求最大值
+        // ...
+        // console求出一下数组最大值
+        const math_arr =[89,90,99,45];
+        const max_arr = Math.max(...math_arr);
+        console.log(max_arr);
+    </script>
+</body>
+</html>
